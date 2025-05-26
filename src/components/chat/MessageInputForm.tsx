@@ -53,7 +53,7 @@ export function MessageInputForm({ onSubmit, isLoading }: MessageInputFormProps)
               <FormControl>
                 <Textarea
                   placeholder="Type your message..."
-                  className="min-h-[56px] resize-none rounded-xl border-input bg-background/50 p-3 shadow-sm focus-visible:ring-primary"
+                  className="min-h-[80px] resize-none rounded-xl border-input bg-background/50 p-3 shadow-sm focus-visible:ring-primary"
                   onKeyDown={handleKeyDown}
                   {...field}
                   disabled={isLoading}
@@ -64,8 +64,8 @@ export function MessageInputForm({ onSubmit, isLoading }: MessageInputFormProps)
             </FormItem>
           )}
         />
-        <Button type="submit" size="icon" className="h-[56px] w-[56px] shrink-0 rounded-full bg-primary hover:bg-primary/90" disabled={isLoading} aria-label="Send message">
-          <SendHorizonal className="h-5 w-5" />
+        <Button type="submit" size="icon" className="h-[80px] w-[80px] shrink-0 rounded-full bg-primary hover:bg-primary/90" disabled={isLoading} aria-label="Send message">
+          <SendHorizonal className="h-6 w-6" />
         </Button>
       </form>
     </Form>
