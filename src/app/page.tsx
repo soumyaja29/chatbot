@@ -26,7 +26,7 @@ export default function ChatPage() {
       {
         id: crypto.randomUUID(),
         role: 'bot',
-        content: "Hello! I'm NodeMind, your intelligent AI assistant. How can I help you today?",
+        content: "Hello! I'm MindBooth, your intelligent AI assistant. How can I help you today?",
         timestamp: new Date(),
       },
     ]);
@@ -122,7 +122,7 @@ export default function ChatPage() {
         <Sidebar side="right" variant="sidebar" collapsible="offcanvas">
           <SettingsPanel settings={chatSettings} onSettingsChange={handleSettingsChange} />
         </Sidebar>
-        <SidebarInset className="flex-1">
+        <SidebarInset className="flex flex-1 flex-col overflow-y-auto">
           <ChatWindow
             messages={messages}
             onSendMessage={handleSendMessage}

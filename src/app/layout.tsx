@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'NodeMind AI Chatbot',
+  title: 'MindBooth AI Chatbot',
   description: 'An intelligent chatbot powered by Next.js and GenAI',
 };
 
