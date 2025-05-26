@@ -122,7 +122,7 @@ export default function ChatPage() {
         <Sidebar side="right" variant="sidebar" collapsible="offcanvas">
           <SettingsPanel settings={chatSettings} onSettingsChange={handleSettingsChange} />
         </Sidebar>
-        <SidebarInset className="flex flex-1 flex-col overflow-y-auto">
+        <SidebarInset className="flex flex-1 flex-col overflow-y-auto pb-4">
           <ChatWindow
             messages={messages}
             onSendMessage={handleSendMessage}
